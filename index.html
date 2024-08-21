@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Бочаров и КО</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <style>
+      /* Кастомные стили, если нужно */
+      .placeholder {
+        background-color: #e5e7eb; /* Серый цвет Tailwind */
+      }
+      .hidden-card {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      .visible-card {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body class="font-sans bg-gray-100 text-gray-800">
+    <!-- Главный экран -->
+    <section id="hero" class="bg-gray-900 text-white py-20 px-20">
+      <div class="container mx-auto text-center">
+        <header class="flex justify-between items-center mb-16">
+          <div class="text-3xl font-bold">Бочаров и КО</div>
+          <nav>
+            <ul class="flex space-x-6">
+              <li><a href="#about" class="hover:text-gray-400">О нас</a></li>
+              <li>
+                <a href="#services" class="hover:text-gray-400">Услуги</a>
+              </li>
+              <li><a href="#team" class="hover:text-gray-400">Команда</a></li>
+              <li>
+                <a href="#contact" class="hover:text-gray-400">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero-content max-w-2xl mx-auto">
+          <h1 class="text-5xl font-bold mb-6">
+            Юридическая поддержка на высшем уровне
+          </h1>
+          <p class="text-xl mb-8">Ваш надежный партнёр в мире права</p>
+          <a
+            href="#contact"
+            class="bg-blue-600 hover:bg-blue-800 text-white py-3 px-6 rounded-lg inline-block transition duration-300"
+            >Связаться с нами</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- О компании -->
+    <section id="about" class="py-20 px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">О нас</h2>
+        <p class="text-lg max-w-3xl mx-auto mb-8">
+          Компания 'Бочаров и КО' предоставляет полный спектр юридических услуг,
+          гарантируя высокий профессионализм и индивидуальный подход к каждому
+          клиенту.
+        </p>
+        <a
+          href="#"
+          class="bg-blue-600 hover:bg-blue-800 text-white py-3 px-6 rounded-lg inline-block transition duration-300"
+          >Узнать больше</a
+        >
+      </div>
+    </section>
+
+    <!-- Наши услуги -->
+    <section id="services" class="bg-gray-100 py-20 px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Что мы предлагаем</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div
+            class="card bg-white p-6 rounded-lg shadow-lg placeholder hidden-card"
+          >
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full"></div>
+            <h3 class="text-2xl font-bold mb-4">Корпоративное право</h3>
+            <p>
+              Мы обеспечиваем правовую поддержку для вашего бизнеса, начиная от
+              создания компаний до юридического сопровождения сделок.
+            </p>
+          </div>
+          <div
+            class="card bg-white p-6 rounded-lg shadow-lg placeholder hidden-card"
+          >
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full"></div>
+            <h3 class="text-2xl font-bold mb-4">Семейное право</h3>
+            <p>
+              Наши юристы помогут вам защитить ваши права в вопросах семейных
+              отношений.
+            </p>
+          </div>
+          <div
+            class="card bg-white p-6 rounded-lg shadow-lg placeholder hidden-card"
+          >
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full"></div>
+            <h3 class="text-2xl font-bold mb-4">Уголовное право</h3>
+            <p>
+              Опытные адвокаты с глубокими знаниями в уголовном праве защитят
+              ваши интересы.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наши достижения -->
+    <section id="achievements" class="py-20 px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Наши достижения</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="achievement bg-white p-6 rounded-lg shadow-lg">
+            <span class="text-5xl font-bold block mb-4">100+</span>
+            <p>Выигранных дел</p>
+          </div>
+          <div class="achievement bg-white p-6 rounded-lg shadow-lg">
+            <span class="text-5xl font-bold block mb-4">200+</span>
+            <p>Довольных клиентов</p>
+          </div>
+          <div class="achievement bg-white p-6 rounded-lg shadow-lg">
+            <span class="text-5xl font-bold block mb-4">20</span>
+            <p>Лет опыта</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы клиентов -->
+    <section id="testimonials" class="bg-gray-100 py-20 px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Отзывы наших клиентов</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card bg-white p-6 rounded-lg shadow-lg">
+            <p>
+              "Очень доволен работой 'Бочаров и КО'. Профессионализм на высшем
+              уровне."
+            </p>
+            <span class="block mt-4 font-bold">- Иван Иванов</span>
+          </div>
+          <div class="card bg-white p-6 rounded-lg shadow-lg">
+            <p>"Благодаря этим юристам удалось выиграть сложное дело."</p>
+            <span class="block mt-4 font-bold">- Мария Петрова</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section id="team" class="py-20 px-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-10">Наша команда</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="card bg-white p-6 rounded-lg shadow-lg">
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full placeholder"></div>
+            <h3 class="text-2xl font-bold mb-2">Сергей Бочаров</h3>
+            <p>Основатель и ведущий юрист</p>
+          </div>
+          <div class="card bg-white p-6 rounded-lg shadow-lg">
+            <div class="w-24 h-24 mx-auto mb-4 rounded-full placeholder"></div>
+            <h3 class="text-2xl font-bold mb-2">Анна Смирнова</h3>
+            <p>Специалист по корпоративному праву</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section id="contact" class="bg-gray-900 text-white py-20 px-20">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-10">Свяжитесь с нами</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <form action="#" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+            />
+            <input
+              type="text"
+              name="phone"
+              placeholder="Телефон"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+            />
+            <textarea
+              name="message"
+              placeholder="Сообщение"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-800 text-white py-3 px-6 rounded-lg transition duration-300"
+            >
+              Отправить
+            </button>
+          </form>
+          <div class="contact-info text-center md:text-left">
+            <p class="text-lg mb-4">
+              <strong>Адрес:</strong> Москва, ул. Примерная, д. 1
+            </p>
+            <p class="text-lg mb-4">
+              <strong>Телефон:</strong> +7 123 456 7890
+            </p>
+            <p class="text-lg"><strong>Email:</strong> infobocharov-co.ru</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+        <nav class="mb-4">
+          <ul class="flex justify-center space-x-6">
+            <li><a href="#about" class="hover:text-gray-400">О нас</a></li>
+            <li><a href="#services" class="hover:text-gray-400">Услуги</a></li>
+            <li><a href="#team" class="hover:text-gray-400">Команда</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Контакты</a></li>
+          </ul>
+        </nav>
+        <p>© 2024 Бочаров и КО. Все права защищены.</p>
+      </div>
+    </footer>
+
+    <!-- GSAP Анимации -->
+    <script>
+      // Ожидание загрузки страницы
+      document.addEventListener("DOMContentLoaded", function () {
+        // Анимация для карточек услуг
+        gsap.to(".card.hidden-card", {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#services",
+            start: "top 80%",
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
