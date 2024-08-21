@@ -23,7 +23,7 @@
   </head>
   <body class="font-sans bg-gray-100 text-gray-800">
     <!-- Главный экран -->
-    <section id="hero" class="bg-gray-900 text-white py-20 px-20">
+    <section id="hero" class="bg-gray-900 text-white py-20">
       <div class="container mx-auto text-center">
         <header class="flex justify-between items-center mb-16">
           <div class="text-3xl font-bold">Бочаров и КО</div>
@@ -55,7 +55,7 @@
     </section>
 
     <!-- О компании -->
-    <section id="about" class="py-20 px-20">
+    <section id="about" class="py-20">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-6">О нас</h2>
         <p class="text-lg max-w-3xl mx-auto mb-8">
@@ -72,7 +72,7 @@
     </section>
 
     <!-- Наши услуги -->
-    <section id="services" class="bg-gray-100 py-20 px-20">
+    <section id="services" class="bg-gray-100 py-20">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-10">Что мы предлагаем</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -111,7 +111,7 @@
     </section>
 
     <!-- Наши достижения -->
-    <section id="achievements" class="py-20 px-20">
+    <section id="achievements" class="py-20">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-10">Наши достижения</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -132,7 +132,7 @@
     </section>
 
     <!-- Отзывы клиентов -->
-    <section id="testimonials" class="bg-gray-100 py-20 px-20">
+    <section id="testimonials" class="bg-gray-100 py-20">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-10">Отзывы наших клиентов</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -152,7 +152,7 @@
     </section>
 
     <!-- Наша команда -->
-    <section id="team" class="py-20 px-20">
+    <section id="team" class="py-20">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-10">Наша команда</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -170,34 +170,49 @@
       </div>
     </section>
 
+    <!-- Продается очко Фесина -->
+    <section id="fesin-product" class="bg-blue-900 text-white py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6">Продается очко Фесина</h2>
+        <p class="text-xl mb-8">
+          Представляем вам эксклюзивное предложение — очко Фесина! Оно сочетает
+          в себе уникальный стиль, невероятный комфорт и долговечность. Идеально
+          подходит как для личного пользования, так и для подарка.
+        </p>
+        <p class="text-xl mb-8">
+          Не упустите шанс стать обладателем этого уникального продукта, который
+          создан для тех, кто ценит качество и эксклюзивность.
+        </p>
+        <a
+          href="#"
+          class="bg-red-600 hover:bg-red-800 text-white py-3 px-6 rounded-lg inline-block transition duration-300"
+          >Доставка на дом</a
+        >
+      </div>
+    </section>
+
     <!-- Контактная информация -->
-    <section id="contact" class="bg-gray-900 text-white py-20 px-20">
+    <section id="contact" class="py-20">
       <div class="container mx-auto">
         <h2 class="text-4xl font-bold text-center mb-10">Свяжитесь с нами</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <form action="#" class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <form class="bg-white p-8 rounded-lg shadow-lg">
             <input
               type="text"
               name="name"
-              placeholder="Имя"
-              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+              placeholder="Ваше имя"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-200 border border-gray-300 text-gray-800 placeholder-gray-500"
             />
             <input
               type="email"
               name="email"
-              placeholder="Email"
-              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
-            />
-            <input
-              type="text"
-              name="phone"
-              placeholder="Телефон"
-              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+              placeholder="Ваш Email"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-200 border border-gray-300 text-gray-800 placeholder-gray-500"
             />
             <textarea
               name="message"
               placeholder="Сообщение"
-              class="w-full p-3 mb-4 rounded-lg bg-gray-700 border border-gray-600 text-white placeholder-gray-400"
+              class="w-full p-3 mb-4 rounded-lg bg-gray-200 border border-gray-300 text-gray-800 placeholder-gray-500"
             ></textarea>
             <button
               type="submit"
@@ -230,16 +245,15 @@
             <li><a href="#contact" class="hover:text-gray-400">Контакты</a></li>
           </ul>
         </nav>
-        <p>© 2024 Бочаров и КО. Все права защищены.</p>
+        <p>2024 Бочаров и КО. Все права защищены.</p>
       </div>
     </footer>
 
-    <!-- GSAP Анимации -->
     <script>
       // Ожидание загрузки страницы
       document.addEventListener("DOMContentLoaded", function () {
-        // Анимация для карточек услуг
-        gsap.to(".card.hidden-card", {
+        // Анимация для карточек услуг и других элементов
+        gsap.to(".hidden-card", {
           opacity: 1,
           y: 0,
           duration: 1,
@@ -248,6 +262,33 @@
           scrollTrigger: {
             trigger: "#services",
             start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+
+        gsap.to(".card", {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#achievements",
+            start: "top 80%",
+            toggleActions: "play none none none",
+          },
+        });
+
+        gsap.to(".achievement", {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.3,
+          ease: "power2.out",
+          scrollTrigger: {
+            trigger: "#fesin-product",
+            start: "top 80%",
+            toggleActions: "play none none none",
           },
         });
       });
